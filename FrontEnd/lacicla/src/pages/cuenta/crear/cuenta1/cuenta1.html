@@ -1,0 +1,37 @@
+<!--
+  Generated template for the Cuenta1Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Crear Cuenta</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p>
+    Registrate
+  </p>
+  <p>
+    <ion-item>
+      <ion-label fixed>Usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="txtUsuario" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label fixed>Email</ion-label>
+        <ion-input type="text" [(ngModel)]="txtEmail" value=""></ion-input>
+      </ion-item>
+    <ion-item>
+      <ion-label fixed>Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="txtPassword" value=""></ion-input>
+    </ion-item>
+    
+      <button ion-button color="primary" (click)="registrar2();" full>Siguiente</button>
+    
+  </p>
+</ion-content>

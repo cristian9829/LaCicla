@@ -1,0 +1,33 @@
+<!--
+  Generated template for the AgregarFormaPagoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Agrega tu Tarjeta</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="todo" (ngSubmit)="guardar()">
+    <ion-item>
+      <ion-label fixed>Numero Tarjeta</ion-label>
+      <ion-input type="text" formControlName="txtNumeroTarjeta" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>MM/AA</ion-label>
+      <ion-input type="text" formControlName="txtFechaVencimiento" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>CVV</ion-label>
+      <ion-input type="text" formControlName="txtCodigo" value=""></ion-input>
+    </ion-item>
+
+    <button ion-button type="submit" [disabled]="!todo.valid" color="primary" full>Guardar</button>
+  </form>
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+      <a ng-click="goBack()" class="button back-button buttons  button-clear header-item nav-back-btn">
+          <i class="ion-android-arrow-back" id="customArrow"></i>
+      </a>
+      <ion-title>Recorridos TEST</ion-title>  
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Explora tus Recorridos
+    </ion-card-header>
+  
+    <ion-list>
+      <button ion-item (click)="resumen();">
+        <ion-icon name="cart" item-start></ion-icon>
+        Ver Recorridos
+      </button>
+  
+      <button ion-item (click)="simular();">
+        <ion-icon name="medical"  item-start></ion-icon>
+        Simular Recorrido
+      </button>
+      </ion-list>
+  </ion-card>
+</ion-content>

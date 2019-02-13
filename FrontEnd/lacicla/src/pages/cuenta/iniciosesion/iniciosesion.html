@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Inicio Sesion</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <p>
+    Inicia Sesión
+  </p>
+
+  <form [formGroup]="todo" (ngSubmit)="logForm()">
+    <ion-item>
+      <ion-label fixed>Email</ion-label>
+      <ion-input type="text" required formControlName="txtEmail" value="" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Contraseña</ion-label>
+      <ion-input type="password" required formControlName="txtPassword" value="" ></ion-input>
+    </ion-item>
+    <button ion-button type="submit" [disabled]="!todo.valid" color="primary" full>Siguiente</button>
+  </form>
+</ion-content>

@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Resumen Recorridos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor="let p of recorridos">
+    <ion-card-header>
+      Bicicleta Model A
+    </ion-card-header>
+    <ion-card-content>
+      Origen: {{p.puntoinicial}} Destino: {{p.puntofinal}}
+      Tarifa: {{p.tarifa}} Kms: {{p.kilometrosrecorridos}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
